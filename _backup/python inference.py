@@ -1,0 +1,22 @@
+python inference.py \
+  --input_path "./Data" \
+  --output_path "./output" \
+  --output_file_predictions "predictions" \
+  --model_file_30_1 "quantile_regression_30_0.1_days_2023-10-16.txt" \
+  --model_file_30_5 "quantile_regression_30_0.5_days_2023-10-16.txt" \
+  --model_file_30_8 "quantile_regression_30_0.8_days_2023-10-16.txt" \
+  --model_file_60_1 "quantile_regression_60_0.1_days_2023-10-16.txt" \
+  --model_file_60_5 "quantile_regression_60_0.5_days_2023-10-16.txt" \
+  --model_file_60_8 "quantile_regression_60_0.8_days_2023-10-16.txt" \
+  --model_file_90_1 "quantile_regression_90_0.1_days_2024-03-20.txt" \
+  --model_file_90_5 "quantile_regression_90_0.5_days_2025-02-23.txt" \
+  --model_file_90_8 "quantile_regression_90_0.8_days_2024-03-20.txt" \
+  --model_file_180_1 "quantile_regression_180_0.1_days_2023-09-28.txt" \
+  --model_file_180_5 "quantile_regression_180_0.5_days_2025-02-23.txt" \
+  --model_file_180_8 "quantile_regression_180_0.8_days_2023-09-28.txt" \
+  --model_file_270_1 "quantile_regression_270_0.1_days_2024-03-19.txt" \
+  --model_file_270_5 "quantile_regression_270_0.5_days_2025-02-23.txt" \
+  --model_file_270_8 "quantile_regression_270_0.8_days_2024-03-19.txt" \
+  --model_file_360_1 "quantile_regression_360+_0.1_days_2024-03-19.txt" \
+  --model_file_360_5 "quantile_regression_360_0.5_days_2025-02-23.txt" \
+  --model_file_360_8 "quantile_regression_360+_0.8_days_2024-03-19.txt"
