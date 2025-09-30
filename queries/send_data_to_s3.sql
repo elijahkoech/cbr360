@@ -23,7 +23,7 @@ HEADER;
 UNLOAD ($$
 select country, to_char(registration_date_utc, 'YYYY-MM') as reg_month, product_group, primary_product, area_derived, count(*) as num_accounts 
 from easybuy.accounts_final_pdt as accounts 
-where has_payment_plan = true and NOT(LOWER(group_name) LIKE '%cross%') 
+where has_payment_plan = true and NOT(LOWER(group_name``) LIKE '%cross%') 
 AND (NOT (LOWER(accounts.group_name) LIKE '%cross%') OR (LOWER(accounts.group_name) LIKE '%cross%') IS NULL) 
 AND (NOT (LEFT (accounts.organization,  21)  <> 'Greenlight Planet DTV' AND  accounts.organization  <> 'Global Community Standards' 
 AND LEFT (accounts.organization, 7)   <> 'EasyBuy') OR (LEFT (accounts.organization,  21)  <> 'Greenlight Planet DTV' 
