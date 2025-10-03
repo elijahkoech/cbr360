@@ -14,6 +14,8 @@ pull-ec2:
 	sh /Users/kiprono/Documents/70_System/mac_setup/backup_to_ssd.sh
 	rsync -avz \
 	--exclude='.venv' \
+	--exclude="data" \
+	--exclude="output" \
 	$(EC2_HOST):$(REMOTE_DIR) $(LOCAL_DIR)
 
 push-ec2:
@@ -27,6 +29,8 @@ push-ec2:
 pull-ec2-dry:
 	rsync -avzn \
 	--exclude='.venv' \
+	--exclude="data" \
+	--exclude="output" \
 	$(EC2_HOST):$(REMOTE_DIR) $(LOCAL_DIR)
 
 push-ec2-dry:
